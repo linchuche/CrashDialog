@@ -83,6 +83,7 @@ public class AppManager {
      */
     public static void AppExit(Context context) {
         try {
+
             finishAllActivity();
 
             Intent intent = new Intent(context, MainActivity.class);
