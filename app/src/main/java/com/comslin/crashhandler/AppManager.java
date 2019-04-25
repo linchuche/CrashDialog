@@ -83,9 +83,7 @@ public class AppManager {
      */
     public static void AppExit(Context context) {
         try {
-
             finishAllActivity();
-
             Intent intent = new Intent(context, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             PendingIntent restartIntent = PendingIntent.getActivity(context,
